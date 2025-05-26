@@ -1,13 +1,13 @@
 'use client';
 
 import Link from 'next/link';
-import { Heart, Home, CalendarDays, Images, MessageSquareHeart, ListChecks, UserCog } from 'lucide-react';
+import { Heart, Home, CalendarDays, Images, MessageSquareHeart, ListChecks, UserCog, Menu } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
-import { Menu } from 'lucide-react';
 import React from 'react';
+import { ThemeToggle } from './ThemeToggle';
 
 
 const navItems = [
@@ -52,24 +52,26 @@ export default function Navbar() {
           <span className="font-lora">Amor Anima <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span></span>
         </Link>
 
-        <nav className="hidden md:flex items-center space-x-2">
-          <NavLinks />
-        </nav>
-
-        <div className="md:hidden">
-          <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Abrir menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-6">
-              <div className="flex flex-col space-y-4 mt-8">
-                <NavLinks isMobile={true} />
-              </div>
-            </SheetContent>
-          </Sheet>
+        <div className="flex items-center space-x-2">
+          <nav className="hidden md:flex items-center space-x-1">
+            <NavLinks />
+          </nav>
+          <ThemeToggle />
+          <div className="md:hidden">
+            <Sheet open={isSheetOpen} onOpenChange={setIsSheetOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-6 w-6" />
+                  <span className="sr-only">Abrir menu</span>
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-6">
+                <div className="flex flex-col space-y-4 mt-8">
+                  <NavLinks isMobile={true} />
+                </div>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>

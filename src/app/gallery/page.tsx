@@ -11,8 +11,13 @@ export default function GalleryPage() {
       <Card className="shadow-xl rounded-xl overflow-hidden">
         <CardHeader className="bg-primary/20 text-center">
           <Images className="w-12 h-12 text-primary mx-auto mb-4" />
-          <CardTitle className="text-3xl font-lora text-primary-foreground/90">Nossa Galeria de Fotos</CardTitle>
-          <CardDescription className="text-muted-foreground">
+          <CardTitle className="text-3xl font-lora text-primary-foreground/90">
+            Nossa Galeria de Fotos
+            <span className='block text-lg font-normal text-muted-foreground/80 mt-1'>
+              思い出の写真 (Omoide no Shashin - Fotos das Lembranças)
+            </span>
+          </CardTitle>
+          <CardDescription className="text-muted-foreground mt-2">
             Uma coleção dos nossos momentos preciosos, aventuras e sorrisos capturados no tempo.
           </CardDescription>
         </CardHeader>

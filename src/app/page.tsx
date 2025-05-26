@@ -3,6 +3,7 @@ import AnniversaryCountdown from '@/components/landing/AnniversaryCountdown';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, CalendarHeart, Gift, ImagePlay, Sparkles } from 'lucide-react';
 
 export default function HomePage() {
@@ -11,8 +12,22 @@ export default function HomePage() {
       <HeroSection />
       <AnniversaryCountdown />
 
+      <div className="my-10 text-center opacity-80 hover:opacity-100 transition-opacity duration-300">
+        <Image 
+          src="https://i.pinimg.com/originals/20/77/68/20776891228b10ea7a42267e2cbb5a9d.gif" 
+          alt="Snorlax dormindo" 
+          width={120} 
+          height={120} 
+          className="mx-auto rounded-full shadow-md" 
+          unoptimized={true} // GIFs can be unoptimized
+          data-ai-hint="snorlax sleeping cute"
+        />
+         <p className="text-xs text-muted-foreground mt-2 italic">~ um soninho de amor ~</p>
+      </div>
+
       <section className="text-center">
-        <h2 className="text-3xl font-lora font-semibold mb-8 text-primary-foreground/80">Explore Nossa História de Amor</h2>
+        <h2 className="text-3xl font-lora font-semibold mb-2 text-primary-foreground/80">Explore Nossa História de Amor</h2>
+        <p className="text-md font-normal text-muted-foreground/90 mb-8">愛の探求 (Ai no Tankyū - A Exploração do Amor)</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <FeatureCard
             icon={<CalendarHeart className="w-10 h-10 text-primary" />}
