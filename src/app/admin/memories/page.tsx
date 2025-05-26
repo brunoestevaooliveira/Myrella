@@ -8,21 +8,21 @@ export default function AdminMemoriesPage() {
       <CardHeader className="px-0">
         <div className="flex items-center gap-3">
           <CalendarPlus className="w-8 h-8 text-primary" />
-          <CardTitle className="text-2xl font-lora">Manage Calendar Memories</CardTitle>
+          <CardTitle className="text-2xl font-lora">Gerenciar Lembranças do Calendário</CardTitle>
         </div>
         <CardDescription>
-          Add, edit, or delete important dates and memories on the interactive calendar. (Functionality coming soon)
+          Adicione, edite ou exclua datas e lembranças importantes no calendário interativo. (Funcionalidade em breve)
         </CardDescription>
       </CardHeader>
       
       <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-        <PlusCircle className="mr-2 h-4 w-4" /> Add New Memory
+        <PlusCircle className="mr-2 h-4 w-4" /> Adicionar Nova Lembrança
       </Button>
 
       <Card>
         <CardContent className="p-6 text-center">
           <p className="text-muted-foreground">
-            Calendar memory management tools will be available here.
+            As ferramentas de gerenciamento de lembranças do calendário estarão disponíveis aqui.
           </p>
         </CardContent>
       </Card>

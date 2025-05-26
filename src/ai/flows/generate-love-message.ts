@@ -1,11 +1,11 @@
 // 'use server';
 
 /**
- * @fileOverview Generates personalized love messages for the user's girlfriend.
+ * @fileOverview Gera mensagens de amor personalizadas para a namorada do usuário.
  *
- * - generateLoveMessage - A function that generates a personalized love message.
- * - GenerateLoveMessageInput - The input type for the generateLoveMessage function.
- * - GenerateLoveMessageOutput - The return type for the generateLoveMessage function.
+ * - generateLoveMessage - Uma função que gera uma mensagem de amor personalizada.
+ * - GenerateLoveMessageInput - O tipo de entrada para a função generateLoveMessage.
+ * - GenerateLoveMessageOutput - O tipo de retorno para a função generateLoveMessage.
  */
 
 'use server';
@@ -14,12 +14,12 @@ import {ai} from '@/ai/genkit';
 import {z} from 'genkit';
 
 const GenerateLoveMessageInputSchema = z.object({
-  memory: z.string().describe('A specific memory or date to include in the love message.'),
+  memory: z.string().describe('Uma lembrança ou data específica para incluir na mensagem de amor.'),
 });
 export type GenerateLoveMessageInput = z.infer<typeof GenerateLoveMessageInputSchema>;
 
 const GenerateLoveMessageOutputSchema = z.object({
-  message: z.string().describe('The generated love message.'),
+  message: z.string().describe('A mensagem de amor gerada.'),
 });
 export type GenerateLoveMessageOutput = z.infer<typeof GenerateLoveMessageOutputSchema>;
 
@@ -31,8 +31,7 @@ const prompt = ai.definePrompt({
   name: 'generateLoveMessagePrompt',
   input: {schema: GenerateLoveMessageInputSchema},
   output: {schema: GenerateLoveMessageOutputSchema},
-  prompt: `Write a personalized love message for my girlfriend, incorporating the following memory: {{{memory}}}.',
-  `,
+  prompt: `Escreva uma mensagem de amor personalizada para minha namorada, incorporando a seguinte lembrança: {{{memory}}}. A mensagem deve ser carinhosa, romântica e sincera. Use um tom poético e apaixonado.`,
 });
 
 const generateLoveMessageFlow = ai.defineFlow(

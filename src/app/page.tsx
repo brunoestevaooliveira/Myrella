@@ -12,35 +12,35 @@ export default function HomePage() {
       <AnniversaryCountdown />
 
       <section className="text-center">
-        <h2 className="text-3xl font-lora font-semibold mb-8 text-primary-foreground/80">Explore Our Love Story</h2>
+        <h2 className="text-3xl font-lora font-semibold mb-8 text-primary-foreground/80">Explore Nossa História de Amor</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           <FeatureCard
             icon={<CalendarHeart className="w-10 h-10 text-primary" />}
-            title="Our Special Dates"
-            description="Relive our cherished moments on an interactive calendar."
+            title="Nossas Datas Especiais"
+            description="Reviva nossos momentos queridos em um calendário interativo."
             link="/calendar"
-            linkText="View Calendar"
+            linkText="Ver Calendário"
           />
           <FeatureCard
             icon={<ImagePlay className="w-10 h-10 text-primary" />}
-            title="Photo Memories"
-            description="A gallery of our adventures and smiles together."
+            title="Memórias em Fotos"
+            description="Uma galeria de nossas aventuras e sorrisos juntos."
             link="/gallery"
-            linkText="See Photos"
+            linkText="Ver Fotos"
           />
           <FeatureCard
             icon={<Sparkles className="w-10 h-10 text-primary" />}
-            title="Reasons I Love You"
-            description="Discover a list of all the things that make you so special to me."
+            title="Razões Que Te Amo"
+            description="Descubra uma lista de todas as coisas que tornam você tão especial para mim."
             link="/reasons"
-            linkText="Read Reasons"
+            linkText="Ler Razões"
           />
           <FeatureCard
             icon={<Gift className="w-10 h-10 text-primary" />}
-            title="Love Messages"
-            description="Generate sweet and personalized messages just for you."
+            title="Mensagens de Amor"
+            description="Gere mensagens doces e personalizadas só para você."
             link="/love-messages"
-            linkText="Create Message"
+            linkText="Criar Mensagem"
           />
         </div>
       </section>

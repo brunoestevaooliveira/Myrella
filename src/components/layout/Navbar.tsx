@@ -11,12 +11,12 @@ import React from 'react';
 
 
 const navItems = [
-  { href: '/', label: 'Home', icon: Home },
-  { href: '/love-messages', label: 'Love Messages', icon: MessageSquareHeart },
-  { href: '/calendar', label: 'Our Calendar', icon: CalendarDays },
-  { href: '/gallery', label: 'Photo Gallery', icon: Images },
-  { href: '/reasons', label: 'Reasons I Love You', icon: ListChecks },
-  { href: '/admin', label: 'Manage Content', icon: UserCog },
+  { href: '/', label: 'Início', icon: Home },
+  { href: '/love-messages', label: 'Mensagens de Amor', icon: MessageSquareHeart },
+  { href: '/calendar', label: 'Nosso Calendário', icon: CalendarDays },
+  { href: '/gallery', label: 'Galeria de Fotos', icon: Images },
+  { href: '/reasons', label: 'Razões Que Te Amo', icon: ListChecks },
+  { href: '/admin', label: 'Gerenciar Conteúdo', icon: UserCog },
 ];
 
 export default function Navbar() {
@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
           <Heart className="h-8 w-8" />
-          <span className="font-lora">Amor Anima</span>
+          <span className="font-lora">Amor Anima <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span></span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-2">
@@ -61,7 +61,7 @@ export default function Navbar() {
             <SheetTrigger asChild>
               <Button variant="ghost" size="icon">
                 <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
+                <span className="sr-only">Abrir menu</span>
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-background p-6">

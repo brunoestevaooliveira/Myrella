@@ -8,21 +8,21 @@ export default function AdminMessagesPage() {
       <CardHeader className="px-0">
         <div className="flex items-center gap-3">
           <MessageSquareEdit className="w-8 h-8 text-primary" />
-          <CardTitle className="text-2xl font-lora">Manage Love Messages</CardTitle>
+          <CardTitle className="text-2xl font-lora">Gerenciar Mensagens de Amor</CardTitle>
         </div>
         <CardDescription>
-          View, edit, or delete love message templates. (Functionality coming soon)
+          Visualize, edite ou exclua modelos de mensagens de amor. (Funcionalidade em breve)
         </CardDescription>
       </CardHeader>
       
       <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-        <PlusCircle className="mr-2 h-4 w-4" /> Add New Message Template
+        <PlusCircle className="mr-2 h-4 w-4" /> Adicionar Novo Modelo de Mensagem
       </Button>
 
       <Card>
         <CardContent className="p-6 text-center">
           <p className="text-muted-foreground">
-            Love message management interface will be here. You&apos;ll be able to curate and adjust AI prompt examples or pre-written messages.
+            A interface de gerenciamento de mensagens de amor estará aqui. Você poderá selecionar e ajustar exemplos de prompts de IA ou mensagens pré-escritas.
           </p>
         </CardContent>
       </Card>

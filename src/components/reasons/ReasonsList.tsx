@@ -8,7 +8,7 @@ interface ReasonsListProps {
 
 export default function ReasonsList({ reasons }: ReasonsListProps) {
   if (!reasons || reasons.length === 0) {
-    return <p className="text-center text-muted-foreground">The list is empty for now, but my love for you is endless!</p>;
+    return <p className="text-center text-muted-foreground">A lista está vazia por enquanto, mas meu amor por você é infinito!</p>;
   }
 
   return (

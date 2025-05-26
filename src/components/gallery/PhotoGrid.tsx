@@ -7,7 +7,7 @@ interface PhotoGridProps {
 
 export default function PhotoGrid({ photos }: PhotoGridProps) {
   if (!photos || photos.length === 0) {
-    return <p className="text-center text-muted-foreground">No photos yet. Let&apos;s make some memories!</p>;
+    return <p className="text-center text-muted-foreground">Ainda não há fotos. Vamos criar algumas lembranças!</p>;
   }
 
   return (

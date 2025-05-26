@@ -6,23 +6,23 @@ export const INITIAL_MEMORIES: Memory[] = [
   {
     id: '1',
     date: new Date(2025, 4, 17),
-    title: 'Our Journey Began',
-    description: 'The beautiful day we officially started dating and our hearts intertwined.',
-    tags: ['anniversary', 'love'],
+    title: 'Nossa Jornada Começou',
+    description: 'O lindo dia em que oficialmente começamos a namorar e nossos corações se entrelaçaram.',
+    tags: ['aniversário', 'amor'],
   },
   {
     id: '2',
     date: new Date(2025, 5, 10),
-    title: 'First Movie Date',
-    description: 'We watched that romantic comedy and couldn\'t stop laughing. Remember the popcorn incident?',
-    tags: ['date', 'fun'],
+    title: 'Primeiro Encontro no Cinema',
+    description: 'Assistimos aquela comédia romântica e não parávamos de rir. Lembra do incidente da pipoca?',
+    tags: ['encontro', 'diversão'],
   },
   {
     id: '3',
     date: new Date(2025, 6, 22),
-    title: 'Beach Day Bliss',
-    description: 'Our first trip to the beach together. The sunset was almost as beautiful as you.',
-    tags: ['trip', 'nature'],
+    title: 'Felicidade na Praia',
+    description: 'Nossa primeira viagem à praia juntos. O pôr do sol era quase tão lindo quanto você.',
+    tags: ['viagem', 'natureza'],
   },
 ];
 
@@ -30,42 +30,42 @@ export const INITIAL_PHOTOS: Photo[] = [
   {
     id: '1',
     src: 'https://placehold.co/600x400.png',
-    alt: 'A beautiful memory together',
-    caption: 'That time we went hiking and got lost (but found a gorgeous view!).',
+    alt: 'Uma linda lembrança juntos',
+    caption: 'Aquela vez que fomos caminhar e nos perdemos (mas encontramos uma vista maravilhosa!).',
     date: new Date(2025, 7, 5),
-    dataAiHint: 'couple hiking'
+    dataAiHint: 'casal caminhada'
   },
   {
     id: '2',
     src: 'https://placehold.co/600x400.png',
-    alt: 'Celebrating a special occasion',
-    caption: 'Your birthday dinner - you looked stunning!',
+    alt: 'Celebrando uma ocasião especial',
+    caption: 'Seu jantar de aniversário - você estava deslumbrante!',
     date: new Date(2025, 8, 12),
-    dataAiHint: 'couple celebration'
+    dataAiHint: 'casal celebração'
   },
   {
     id: '3',
     src: 'https://placehold.co/600x400.png',
-    alt: 'A cozy evening in',
-    caption: 'Movie night with homemade pizza. Best combo!',
+    alt: 'Uma noite aconchegante em casa',
+    caption: 'Noite de cinema com pizza caseira. Melhor combinação!',
     date: new Date(2025, 9, 3),
-    dataAiHint: 'couple cozy'
+    dataAiHint: 'casal aconchego'
   },
   {
     id: '4',
     src: 'https://placehold.co/600x400.png',
-    alt: 'Exploring a new city',
-    caption: 'Our weekend getaway adventure.',
+    alt: 'Explorando uma nova cidade',
+    caption: 'Nossa aventura de fim de semana.',
     date: new Date(2025, 10, 18),
-    dataAiHint: 'couple travel'
+    dataAiHint: 'casal viagem'
   },
 ];
 
 export const INITIAL_REASONS: Reason[] = [
-  { id: '1', text: 'Your beautiful smile that lights up my entire world every single day.' },
-  { id: '2', text: 'Your unwavering kindness and compassion towards everyone you meet.' },
-  { id: '3', text: 'The way you make me laugh until my stomach hurts, even on tough days.' },
-  { id: '4', text: 'Your incredible intelligence and the way you see the world.' },
-  { id: '5', text: 'How supportive you are of my dreams and ambitions.' },
-  { id: '6', text: 'Your adventurous spirit and willingness to try new things with me.' },
+  { id: '1', text: 'Seu lindo sorriso que ilumina meu mundo inteiro todos os dias.' },
+  { id: '2', text: 'Sua bondade e compaixão inabaláveis por todos que você conhece.' },
+  { id: '3', text: 'A maneira como você me faz rir até a barriga doer, mesmo nos dias difíceis.' },
+  { id: '4', text: 'Sua inteligência incrível e a forma como você vê o mundo.' },
+  { id: '5', text: 'O quanto você apoia meus sonhos e ambições.' },
+  { id: '6', text: 'Seu espírito aventureiro e disposição para experimentar coisas novas comigo.' },
 ];

@@ -10,19 +10,19 @@ export default function AdminDashboardPage() {
         <CardHeader className="flex flex-row items-center gap-4">
           <LayoutDashboard className="w-10 h-10 text-primary" />
           <div>
-            <CardTitle className="text-3xl font-lora">Admin Dashboard</CardTitle>
-            <CardDescription>Manage all the content for Amor Anima.</CardDescription>
+            <CardTitle className="text-3xl font-lora">Painel de Administração</CardTitle>
+            <CardDescription>Gerencie todo o conteúdo do Amor Anima.</CardDescription>
           </div>
         </CardHeader>
         <CardContent>
           <p className="text-muted-foreground mb-6">
-            Welcome to the content management area. From here, you can add, edit, or delete love messages, photos, reasons, and calendar memories.
+            Bem-vindo(a) à área de gerenciamento de conteúdo. Daqui, você pode adicionar, editar ou excluir mensagens de amor, fotos, razões e lembranças do calendário.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <AdminQuickLink href="/admin/messages" title="Manage Love Messages" description="Edit generated love message templates or add new ones." />
-            <AdminQuickLink href="/admin/photos" title="Manage Photo Gallery" description="Upload new photos, edit captions, or remove old ones." />
-            <AdminQuickLink href="/admin/reasons" title="Manage Reasons I Love You" description="Add more reasons or refine existing ones." />
-            <AdminQuickLink href="/admin/memories" title="Manage Calendar Memories" description="Update important dates and memories on the interactive calendar." />
+            <AdminQuickLink href="/admin/messages" title="Gerenciar Mensagens de Amor" description="Edite modelos de mensagens de amor geradas ou adicione novos." />
+            <AdminQuickLink href="/admin/photos" title="Gerenciar Galeria de Fotos" description="Carregue novas fotos, edite legendas ou remova as antigas." />
+            <AdminQuickLink href="/admin/reasons" title="Gerenciar Razões Que Te Amo" description="Adicione mais razões ou refine as existentes." />
+            <AdminQuickLink href="/admin/memories" title="Gerenciar Lembranças do Calendário" description="Atualize datas importantes e lembranças no calendário interativo." />
           </div>
         </CardContent>
       </Card>
@@ -46,7 +46,7 @@ function AdminQuickLink({ href, title, description }: AdminQuickLinkProps) {
         <p className="text-sm text-muted-foreground mb-4">{description}</p>
         <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
           <Link href={href}>
-            Go to section <ArrowRight className="ml-2 h-4 w-4" />
+            Ir para seção <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
       </CardContent>

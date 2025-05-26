@@ -2,6 +2,7 @@ import Image from 'next/image';
 import type { Photo } from '@/lib/types';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 import { format } from 'date-fns';
+import { ptBR } from 'date-fns/locale';
 import { CalendarDays } from 'lucide-react';
 
 interface PhotoCardProps {
@@ -27,7 +28,7 @@ export default function PhotoCard({ photo }: PhotoCardProps) {
       </CardContent>
       <CardFooter className="p-4 pt-0 text-xs text-muted-foreground flex items-center">
         <CalendarDays className="w-3.5 h-3.5 mr-1.5" />
-        {format(photo.date, 'MMMM d, yyyy')}
+        {format(photo.date, 'dd \'de\' MMMM \'de\' yyyy', { locale: ptBR })}
       </CardFooter>
     </Card>
   );

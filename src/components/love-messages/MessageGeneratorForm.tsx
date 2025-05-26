@@ -14,7 +14,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 
 const FormSchema = z.object({
-  memory: z.string().min(5, 'Please share a bit more about the memory (at least 5 characters).').max(200, 'Memory is too long (max 200 characters).'),
+  memory: z.string().min(5, 'Por favor, compartilhe um pouco mais sobre a lembrança (pelo menos 5 caracteres).').max(200, 'A lembrança é muito longa (máximo de 200 caracteres).'),
 });
 
 type FormData = z.infer<typeof FormSchema>;
@@ -39,16 +39,16 @@ export default function MessageGeneratorForm() {
       const result = await generateLoveMessage(input);
       setGeneratedMessage(result.message);
       toast({
-        title: "Message Generated!",
-        description: "Your personalized love message is ready.",
+        title: "Mensagem Gerada!",
+        description: "Sua mensagem de amor personalizada está pronta.",
         variant: "default",
       });
     } catch (error) {
       console.error('Error generating message:', error);
-      setGeneratedMessage('Sorry, I had a little trouble generating a message. Please try again.');
+      setGeneratedMessage('Desculpe, tive um pequeno problema ao gerar uma mensagem. Por favor, tente novamente.');
       toast({
-        title: "Error",
-        description: "Could not generate message. Please try again.",
+        title: "Erro",
+        description: "Não foi possível gerar a mensagem. Por favor, tente novamente.",
         variant: "destructive",
       });
     } finally {
@@ -65,10 +65,10 @@ export default function MessageGeneratorForm() {
             name="memory"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-lg font-semibold text-foreground/80">Share a Memory or Date</FormLabel>
+                <FormLabel className="text-lg font-semibold text-foreground/80">Compartilhe uma Lembrança ou Data</FormLabel>
                 <FormControl>
                   <Input
-                    placeholder="e.g., Our first picnic by the lake"
+                    placeholder="Ex: Nosso primeiro piquenique à beira do lago"
                     {...field}
                     className="text-base"
                   />
@@ -81,12 +81,12 @@ export default function MessageGeneratorForm() {
             {isLoading ? (
               <>
                 <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                Generating...
+                Gerando...
               </>
             ) : (
               <>
                 <Wand2 className="mr-2 h-5 w-5" />
-                Generate Message
+                Gerar Mensagem
               </>
             )}
           </Button>
@@ -96,15 +96,15 @@ export default function MessageGeneratorForm() {
       {generatedMessage && (
         <Card className="mt-8 bg-accent/20 border-accent shadow-md rounded-lg">
           <CardContent className="p-6">
-            <h3 className="text-xl font-lora font-semibold mb-3 text-accent-foreground">Your Personalized Message:</h3>
+            <h3 className="text-xl font-lora font-semibold mb-3 text-accent-foreground">Sua Mensagem Personalizada:</h3>
             <Textarea
               value={generatedMessage}
               readOnly
               rows={5}
               className="text-base bg-background"
             />
-             <Button variant="outline" className="mt-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={() => navigator.clipboard.writeText(generatedMessage).then(() => toast({title: "Copied!", description: "Message copied to clipboard."}))}>
-              <Send className="mr-2 h-4 w-4" /> Copy Message
+             <Button variant="outline" className="mt-4 border-primary text-primary hover:bg-primary hover:text-primary-foreground" onClick={() => navigator.clipboard.writeText(generatedMessage).then(() => toast({title: "Copiado!", description: "Mensagem copiada para a área de transferência."}))}>
+              <Send className="mr-2 h-4 w-4" /> Copiar Mensagem
             </Button>
           </CardContent>
         </Card>

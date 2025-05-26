@@ -8,21 +8,21 @@ export default function AdminReasonsPage() {
       <CardHeader className="px-0">
         <div className="flex items-center gap-3">
           <ListPlus className="w-8 h-8 text-primary" />
-          <CardTitle className="text-2xl font-lora">Manage Reasons I Love You</CardTitle>
+          <CardTitle className="text-2xl font-lora">Gerenciar Razões Que Te Amo</CardTitle>
         </div>
         <CardDescription>
-          Add new reasons, edit existing ones, or change their order. (Functionality coming soon)
+          Adicione novas razões, edite as existentes ou altere a ordem delas. (Funcionalidade em breve)
         </CardDescription>
       </CardHeader>
       
       <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-        <PlusCircle className="mr-2 h-4 w-4" /> Add New Reason
+        <PlusCircle className="mr-2 h-4 w-4" /> Adicionar Nova Razão
       </Button>
 
       <Card>
         <CardContent className="p-6 text-center">
           <p className="text-muted-foreground">
-            The interface for managing the list of reasons will be displayed here.
+            A interface para gerenciar a lista de razões será exibida aqui.
           </p>
         </CardContent>
       </Card>

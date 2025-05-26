@@ -34,11 +34,25 @@ export default function AnniversaryCountdown() {
           seconds: Math.floor((difference / 1000) % 60),
         });
       } else {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 }); // Happy Anniversary!
+        // Check if it's exactly the anniversary day
+        const isTodayAnniversary = now.getDate() === START_DATING_DATE.getDate() && now.getMonth() === START_DATING_DATE.getMonth();
+        if (isTodayAnniversary) {
+           setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 }); 
+        } else {
+          // If past anniversary and not today, recalculate for next year immediately.
+           nextAnniversary.setFullYear(now.getFullYear() + 1);
+           const newDifference = +nextAnniversary - +now;
+           setTimeLeft({
+            days: Math.floor(newDifference / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((newDifference / (1000 * 60 * 60)) % 24),
+            minutes: Math.floor((newDifference / 1000 / 60) % 60),
+            seconds: Math.floor((newDifference / 1000) % 60),
+          });
+        }
       }
     };
 
-    calculateTimeLeft(); // Initial calculation
+    calculateTimeLeft(); 
     const timer = setInterval(calculateTimeLeft, 1000);
 
     return () => clearInterval(timer);
@@ -48,11 +62,11 @@ export default function AnniversaryCountdown() {
     return (
       <Card className="shadow-lg rounded-xl">
         <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-accent/30">
-          <CardTitle className="text-xl font-lora font-medium text-accent-foreground">Next Anniversary Countdown</CardTitle>
+          <CardTitle className="text-xl font-lora font-medium text-accent-foreground">Contagem Regressiva para o Próximo Aniversário</CardTitle>
           <Gift className="h-6 w-6 text-accent-foreground" />
         </CardHeader>
         <CardContent className="pt-6 text-center">
-          <p className="text-2xl font-bold text-muted-foreground">Loading countdown...</p>
+          <p className="text-2xl font-bold text-muted-foreground">Carregando contagem...</p>
         </CardContent>
       </Card>
     );
@@ -60,26 +74,25 @@ export default function AnniversaryCountdown() {
   
   const isAnniversaryToday = timeLeft.days === 0 && timeLeft.hours === 0 && timeLeft.minutes === 0 && timeLeft.seconds === 0 && new Date().getDate() === START_DATING_DATE.getDate() && new Date().getMonth() === START_DATING_DATE.getMonth();
 
-
   return (
     <Card className="shadow-lg rounded-xl overflow-hidden">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2 bg-accent/30">
         <CardTitle className="text-xl font-lora font-medium text-accent-foreground">
-         {isAnniversaryToday ? "Happy Anniversary!" : "Next Anniversary Countdown"}
+         {isAnniversaryToday ? "Feliz Aniversário!" : "Contagem Regressiva para o Próximo Aniversário"}
         </CardTitle>
         <Gift className="h-6 w-6 text-accent-foreground" />
       </CardHeader>
       <CardContent className="pt-6">
         {isAnniversaryToday ? (
           <p className="text-3xl text-center font-bold text-primary animate-pulse">
-            Happy Anniversary, My Love! 🎉💖
+            Feliz Aniversário, Meu Amor! 🎉💖
           </p>
         ) : (
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
-            <TimeUnit value={timeLeft.days} label="Days" />
-            <TimeUnit value={timeLeft.hours} label="Hours" />
-            <TimeUnit value={timeLeft.minutes} label="Minutes" />
-            <TimeUnit value={timeLeft.seconds} label="Seconds" />
+            <TimeUnit value={timeLeft.days} label="Dias" />
+            <TimeUnit value={timeLeft.hours} label="Horas" />
+            <TimeUnit value={timeLeft.minutes} label="Minutos" />
+            <TimeUnit value={timeLeft.seconds} label="Segundos" />
           </div>
         )}
       </CardContent>

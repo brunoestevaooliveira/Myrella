@@ -24,7 +24,7 @@ const lora = Lora({
 
 export const metadata: Metadata = {
   title: 'Amor Anima',
-  description: 'A special place for our love story.',
+  description: 'Um lugar especial para a nossa história de amor.',
 };
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="pt-BR" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${lora.variable} antialiased min-h-screen flex flex-col`}
       >
@@ -42,7 +42,7 @@ export default function RootLayout({
           {children}
         </main>
         <footer className="py-6 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} Amor Anima. Crafted with love.</p>
+          <p>&copy; {new Date().getFullYear()} Amor Anima. Criado com amor <span className="text-xs text-primary/70">愛</span>.</p>
         </footer>
         <Toaster />
       </body>
