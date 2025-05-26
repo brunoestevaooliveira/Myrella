@@ -49,7 +49,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
           <Heart className="h-8 w-8" />
-          <span className="font-lora">Amor Anima <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span></span>
+          <span className="font-lora">Marceli <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span></span>
         </Link>
 
         <div className="flex items-center space-x-2">

@@ -4,7 +4,7 @@ import { Lora } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import { Toaster } from '@/components/ui/toaster';
-import { ThemeProvider } from '@/components/theme-provider'; // Corrected import path
+import { ThemeProvider } from '@/components/theme-provider'; 
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -24,7 +24,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: 'Amor Anima',
+  title: 'Marceli',
   description: 'Um lugar especial para a nossa história de amor.',
 };
 
@@ -49,7 +49,7 @@ export default function RootLayout({
             {children}
           </main>
           <footer className="py-6 text-center text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Amor Anima. Criado com amor <span className="text-xs text-primary/70">愛 (Ai)</span>.</p>
+            <p>&copy; {new Date().getFullYear()} Marceli. Criado com amor <span className="text-xs text-primary/70">愛 (Ai)</span>.</p>
           </footer>
           <Toaster />
         </ThemeProvider>
