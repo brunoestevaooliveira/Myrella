@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, CalendarHeart, Gift, ImagePlay, Sparkles } from 'lucide-react';
+import { ArrowRight, CalendarHeart, Gift, ImagePlay, Sparkles, Quote } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -28,7 +28,7 @@ export default function HomePage() {
       <section className="text-center">
         <h2 className="text-3xl font-lora font-semibold mb-2 text-primary-foreground/80">Explore Nossa História de Amor</h2>
         <p className="text-md font-normal text-muted-foreground/90 mb-8">愛の探求 (Ai no Tankyū - A Exploração do Amor)</p>
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Ajustado para lg:grid-cols-3 */}
           <FeatureCard
             icon={<CalendarHeart className="w-10 h-10 text-primary" />}
             title="Nossas Datas Especiais"
@@ -56,6 +56,13 @@ export default function HomePage() {
             description="Gere mensagens doces e personalizadas só para você."
             link="/love-messages"
             linkText="Criar Mensagem"
+          />
+          <FeatureCard
+            icon={<Quote className="w-10 h-10 text-primary" />}
+            title="Citações de Amor"
+            description="Inspire-se com belas palavras sobre o amor."
+            link="/quotes"
+            linkText="Ver Citações"
           />
         </div>
       </section>

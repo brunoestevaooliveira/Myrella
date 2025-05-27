@@ -20,3 +20,9 @@ export interface Reason {
   id: string;
   text: string;
 }
+
+export interface LoveQuote {
+  id: string;
+  text: string;
+  author?: string;
+}

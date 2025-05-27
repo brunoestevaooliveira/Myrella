@@ -1,4 +1,4 @@
-import type { Memory, Photo, Reason } from './types';
+import type { Memory, Photo, Reason, LoveQuote } from './types';
 
 export const START_DATING_DATE = new Date(2025, 4, 17); // Month is 0-indexed, so May is 4
 
@@ -9,6 +9,8 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Nossa Jornada Começou',
     description: 'O lindo dia em que oficialmente começamos a namorar e nossos corações se entrelaçaram.',
     tags: ['aniversário', 'amor'],
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'casal feliz',
   },
   {
     id: '2',
@@ -16,6 +18,8 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Primeiro Encontro no Cinema',
     description: 'Assistimos aquela comédia romântica e não parávamos de rir. Lembra do incidente da pipoca?',
     tags: ['encontro', 'diversão'],
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'cinema casal',
   },
   {
     id: '3',
@@ -23,6 +27,8 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Felicidade na Praia',
     description: 'Nossa primeira viagem à praia juntos. O pôr do sol era quase tão lindo quanto você.',
     tags: ['viagem', 'natureza'],
+    image: 'https://placehold.co/600x400.png',
+    dataAiHint: 'praia por do sol',
   },
 ];
 
@@ -68,4 +74,12 @@ export const INITIAL_REASONS: Reason[] = [
   { id: '4', text: 'Sua inteligência incrível e a forma como você vê o mundo.' },
   { id: '5', text: 'O quanto você apoia meus sonhos e ambições.' },
   { id: '6', text: 'Seu espírito aventureiro e disposição para experimentar coisas novas comigo.' },
+];
+
+export const INITIAL_QUOTES: LoveQuote[] = [
+  { id: '1', text: 'Amar não é olhar um para o outro, é olhar juntos na mesma direção.', author: 'Antoine de Saint-Exupéry' },
+  { id: '2', text: 'O amor é a amizade que pegou fogo.', author: 'Ann Landers' },
+  { id: '3', text: 'Sei que vou te amar por toda a minha vida.', author: 'Vinicius de Moraes' },
+  { id: '4', text: 'Te amo não pelo que você é, mas pelo que sou quando estou com você.', author: 'Roy Croft' },
+  { id: '5', text: 'Onde há amor, há vida.', author: 'Mahatma Gandhi' },
 ];
