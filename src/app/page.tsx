@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, CalendarHeart, Gift, ImagePlay, Sparkles, Quote } from 'lucide-react';
+import { ArrowRight, CalendarHeart, Gift, ImagePlay, Sparkles, Quote, MessageSquareHeart } from 'lucide-react'; // Adicionado MessageSquareHeart
 
 export default function HomePage() {
   return (
@@ -28,7 +28,7 @@ export default function HomePage() {
       <section className="text-center">
         <h2 className="text-3xl font-lora font-semibold mb-2 text-primary-foreground/80">Explore Nossa História de Amor</h2>
         <p className="text-md font-normal text-muted-foreground/90 mb-8">愛の探求 (Ai no Tankyū - A Exploração do Amor)</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Ajustado para lg:grid-cols-3 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <FeatureCard
             icon={<CalendarHeart className="w-10 h-10 text-primary" />}
             title="Nossas Datas Especiais"
@@ -51,7 +51,7 @@ export default function HomePage() {
             linkText="Ler Razões"
           />
           <FeatureCard
-            icon={<Gift className="w-10 h-10 text-primary" />}
+            icon={<MessageSquareHeart className="w-10 h-10 text-primary" />}
             title="Mensagens de Amor"
             description="Gere mensagens doces e personalizadas só para você."
             link="/love-messages"
@@ -63,6 +63,13 @@ export default function HomePage() {
             description="Inspire-se com belas palavras sobre o amor."
             link="/quotes"
             linkText="Ver Citações"
+          />
+          <FeatureCard
+            icon={<Gift className="w-10 h-10 text-primary" />}
+            title="Caixinha de Afeto"
+            description="Abra uma surpresa especial pensada para você."
+            link="/affection"
+            linkText="Abrir Surpresa"
           />
         </div>
       </section>

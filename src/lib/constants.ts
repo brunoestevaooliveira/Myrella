@@ -83,3 +83,18 @@ export const INITIAL_QUOTES: LoveQuote[] = [
   { id: '4', text: 'Te amo não pelo que você é, mas pelo que sou quando estou com você.', author: 'Roy Croft' },
   { id: '5', text: 'Onde há amor, há vida.', author: 'Mahatma Gandhi' },
 ];
+
+export const INITIAL_AFFECTION_MESSAGES: string[] = [
+  "Você ilumina meu dia!",
+  "Pensando em você ❤️",
+  "Você é incrível!",
+  "Um abraço virtual apertado!",
+  "Mal posso esperar para te ver!",
+  "Você me faz sorrir 😊",
+  "Lembre-se: você é especial!",
+  "Com carinho, para você.",
+  "Cada momento ao seu lado é um presente.",
+  "Você é meu pensamento favorito.",
+  "Que seu dia seja tão lindo quanto você!",
+  "Sua felicidade é a minha."
+];
