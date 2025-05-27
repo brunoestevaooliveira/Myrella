@@ -6,7 +6,7 @@ import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider'; 
-import YouTubeBackgroundPlayer from '@/components/layout/YouTubeBackgroundPlayer'; // Importar o novo componente
+import YouTubeBackgroundPlayer from '@/components/layout/YouTubeBackgroundPlayer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -46,7 +46,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <YouTubeBackgroundPlayer /> {/* Adicionar o player aqui */}
+          <YouTubeBackgroundPlayer />
           <Navbar />
           <main className="flex-grow container mx-auto px-4 py-8">
             {children}
