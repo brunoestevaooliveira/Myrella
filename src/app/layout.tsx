@@ -50,34 +50,36 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navbar />
-          <main className="flex-grow container mx-auto px-4 py-8">
+          <main className="flex-grow container mx-auto px-4 py-8 pb-48">
             {children}
           </main>
-          <footer className="py-6 px-4 text-center text-muted-foreground sticky bottom-0 z-10 bg-background/90 backdrop-blur">
-            <div className="mb-4">
-              <iframe 
-                width="100%" 
-                height="80" 
-                src={embedUrl}
-                title="YouTube video player" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                allowFullScreen
-                style={{ borderRadius: '12px', maxWidth: '400px', margin: '0 auto' }}
-              ></iframe>
-            </div>
-            <p>&copy; {new Date().getFullYear()} Myrella. Criado com amor <span className="text-xs text-primary/70">愛 (Ai)</span>.</p>
-            <div className="mt-4 flex flex-col items-center gap-2">
-              <Image 
-                src="https://i.pinimg.com/736x/b0/13/9d/b0139daeac2bd47de595efd76965bfb6.jpg" 
-                alt="Lontras fofas" 
-                width={100} 
-                height={100} 
-                className="rounded-full"
-                unoptimized
-                data-ai-hint="cute otters"
-              />
-              <p className="text-sm italic">é voce meu amor apenas voce minha lontra</p>
+          <footer className="py-6 px-4 text-center text-muted-foreground fixed bottom-0 left-0 right-0 z-10 bg-background/90 backdrop-blur-sm border-t border-border/40">
+            <div className="container mx-auto">
+              <div className="mb-4">
+                <iframe 
+                  width="100%" 
+                  height="80" 
+                  src={embedUrl}
+                  title="YouTube video player" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                  allowFullScreen
+                  style={{ borderRadius: '12px', maxWidth: '400px', margin: '0 auto' }}
+                ></iframe>
+              </div>
+              <p className="text-xs">&copy; {new Date().getFullYear()} Myrella. Criado com amor <span className="text-primary/70">愛 (Ai)</span>.</p>
+              <div className="mt-2 flex items-center justify-center gap-2">
+                <Image 
+                  src="https://i.pinimg.com/736x/b0/13/9d/b0139daeac2bd47de595efd76965bfb6.jpg" 
+                  alt="Lontras fofas" 
+                  width={24} 
+                  height={24} 
+                  className="rounded-full"
+                  unoptimized
+                  data-ai-hint="cute otters"
+                />
+                <p className="text-xs italic">é voce meu amor apenas voce minha lontra</p>
+              </div>
             </div>
           </footer>
           <Toaster />
