@@ -167,54 +167,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="text-center">
-        <h2 className="text-3xl font-lora font-semibold mb-2 text-primary">Explore Nossa História de Amor</h2>
-        <p className="text-md font-normal text-muted-foreground/90 mb-8">愛の探求 (Ai no Tankyū - A Exploração do Amor)</p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <FeatureCard
-            icon={<Heart className="w-10 h-10 text-primary" />}
-            title="Amor"
-            description="Uma página dedicada ao nosso sentimento mais profundo."
-            link="/amor"
-            linkText="Ver Declaração"
-          />
-          <FeatureCard
-            icon={<FileHeart className="w-10 h-10 text-primary" />}
-            title="Uma Promessa"
-            description="Uma mensagem especial para você."
-            link="/promise"
-            linkText="Ler Mensagem"
-          />
-          <FeatureCard
-            icon={<CalendarHeart className="w-10 h-10 text-primary" />}
-            title="Nossas Datas Especiais"
-            description="Reviva nossos momentos queridos em um calendário interativo."
-            link="/calendar"
-            linkText="Ver Calendário"
-          />
-          <FeatureCard
-            icon={<Sparkles className="w-10 h-10 text-primary" />}
-            title="Razões Que Te Amo"
-            description="Descubra uma lista de todas as coisas que tornam você tão especial para mim."
-            link="/reasons"
-            linkText="Ler Razões"
-          />
-          <FeatureCard
-            icon={<Quote className="w-10 h-10 text-primary" />}
-            title="Citações de Amor"
-            description="Inspire-se com belas palavras sobre o amor."
-            link="/quotes"
-            linkText="Ver Citações"
-          />
-          <FeatureCard
-            icon={<Gift className="w-10 h-10 text-primary" />}
-            title="Caixinha de Afeto"
-            description="Abra para uma surpresa especial pensada para você."
-            link="/affection"
-            linkText="Abrir Surpresa"
-          />
-        </div>
-      </section>
     </div>
   );
 }
