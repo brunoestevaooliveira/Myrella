@@ -17,8 +17,8 @@ export default function HomePage() {
         <Image 
           src="https://i.pinimg.com/originals/7c/84/bd/7c84bd28ec86fd2049dc159e9e2cc23a.gif" 
           alt="Howl e Sophie se olhando" 
-          width={490} 
-          height={300} 
+          width={980} 
+          height={600} 
           className="mx-auto rounded-lg shadow-md" 
           unoptimized={true} // GIFs can be unoptimized
           data-ai-hint="howl sophie"
@@ -28,8 +28,8 @@ export default function HomePage() {
             <Image 
               src="https://i.pinimg.com/736x/b0/13/9d/b0139daeac2bd47de595efd76965bfb6.jpg" 
               alt="Lontras fofas" 
-              width={245} 
-              height={150} 
+              width={980} 
+              height={600} 
               className="rounded-lg shadow-md"
               unoptimized
               data-ai-hint="cute otters"
@@ -37,6 +37,22 @@ export default function HomePage() {
             <p className="text-md italic text-muted-foreground">é voce meu amor apenas voce minha lontra</p>
           </div>
       </div>
+
+      <section className="text-center">
+        <Image
+          src="https://i.pinimg.com/1200x/fd/e9/8b/fde98bf9afc4b5be9d0f507951c95a4c.jpg"
+          alt="Eu te amo em várias línguas"
+          width={800}
+          height={600}
+          className="mx-auto rounded-lg shadow-md mb-6"
+          unoptimized
+          data-ai-hint="love languages"
+        />
+        <h2 className="text-3xl font-lora font-semibold mb-8 text-primary">
+          Eu te amo, amor, em 100 línguas
+        </h2>
+        {/* Futuramente, podemos adicionar um componente interativo aqui */}
+      </section>
 
       <section className="text-center">
         <h2 className="text-3xl font-lora font-semibold mb-2 text-primary">Explore Nossa História de Amor</h2>
