@@ -50,7 +50,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
+        <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary font-lora">
           <Image 
             src="https://i.pinimg.com/736x/8c/6e/16/8c6e169a42578a693cfadcf389bbefbb.jpg" 
             alt="Gato fofo" 
@@ -59,7 +59,7 @@ export default function Navbar() {
             className="rounded-full"
             unoptimized
           />
-          <span className="font-lora">Myrella <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span></span>
+          Myrella <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span>
         </Link>
 
         <div className="flex items-center space-x-2">
