@@ -26,7 +26,7 @@ export default function HomePage() {
       </div>
 
       <section className="text-center">
-        <h2 className="text-3xl font-lora font-semibold mb-2 text-primary-foreground/80">Explore Nossa História de Amor</h2>
+        <h2 className="text-3xl font-lora font-semibold mb-2 text-primary">Explore Nossa História de Amor</h2>
         <p className="text-md font-normal text-muted-foreground/90 mb-8">愛の探求 (Ai no Tankyū - A Exploração do Amor)</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <FeatureCard
