@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { Heart, Home, CalendarDays, Images, MessageSquareHeart, ListChecks, UserCog, Menu, Quote, Gift } from 'lucide-react'; // Adicionado Gift
+import Image from 'next/image';
+import { Home, CalendarDays, Images, MessageSquareHeart, ListChecks, UserCog, Menu, Quote, Gift } from 'lucide-react'; // Adicionado Gift
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -50,7 +51,14 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary">
-          <Heart className="h-8 w-8" />
+          <Image 
+            src="https://i.pinimg.com/736x/8c/6e/16/8c6e169a42578a693cfadcf389bbefbb.jpg" 
+            alt="Gato fofo" 
+            width={32} 
+            height={32} 
+            className="rounded-full"
+            unoptimized
+          />
           <span className="font-lora">Myrella <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span></span>
         </Link>
 
