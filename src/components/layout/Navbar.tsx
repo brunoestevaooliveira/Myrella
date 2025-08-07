@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Home, CalendarDays, Images, MessageSquareHeart, ListChecks, UserCog, Menu, Quote, Gift } from 'lucide-react'; // Adicionado Gift
+import { Home, CalendarDays, Images, ListChecks, UserCog, Menu, Quote, Gift, Heart } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -13,12 +13,12 @@ import { ThemeToggle } from './ThemeToggle';
 
 const navItems = [
   { href: '/', label: 'Início', icon: Home },
-  { href: '/love-messages', label: 'Mensagens de Amor', icon: MessageSquareHeart },
+  { href: '/amor', label: 'Amor', icon: Heart },
   { href: '/calendar', label: 'Nosso Calendário', icon: CalendarDays },
   { href: '/gallery', label: 'Galeria de Fotos', icon: Images },
   { href: '/reasons', label: 'Razões Que Te Amo', icon: ListChecks },
   { href: '/quotes', label: 'Citações de Amor', icon: Quote },
-  { href: '/affection', label: 'Caixinha de Afeto', icon: Gift }, // Novo item
+  { href: '/affection', label: 'Caixinha de Afeto', icon: Gift },
   { href: '/admin', label: 'Gerenciar Conteúdo', icon: UserCog },
 ];
 
