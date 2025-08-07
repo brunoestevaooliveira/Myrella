@@ -1,3 +1,4 @@
+
 'use client';
 
 import type { CSSProperties } from 'react';
@@ -9,8 +10,8 @@ import { format } from 'date-fns';
 import { ptBR } from 'date-fns/locale';
 import { Badge } from '@/components/ui/badge';
 import { ScrollArea } from '@/components/ui/scroll-area';
-import { Button } from '../ui/button';
-import { AlertCircle, Info } from 'lucide-react';
+import { Info } from 'lucide-react';
+import Image from 'next/image'; // Importar o componente Image do Next.js
 
 interface MemoriesCalendarProps {
   memories: Memory[];
@@ -84,9 +85,17 @@ export default function MemoriesCalendar({ memories }: MemoriesCalendarProps) {
             </CardContent>
             </ScrollArea>
             {selectedMemory.image && (
-               <CardFooter className="p-2">
-                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                 <img src={selectedMemory.image} alt={selectedMemory.title} className="rounded-md w-full object-cover aspect-video" data-ai-hint="couple memory" />
+               <CardFooter className="p-2 mt-auto">
+                 <div className="relative w-full aspect-video rounded-md overflow-hidden">
+                    <Image 
+                      src={selectedMemory.image} 
+                      alt={selectedMemory.title} 
+                      fill
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      className="object-cover" 
+                      data-ai-hint={selectedMemory.dataAiHint || "couple memory"} 
+                    />
+                 </div>
                </CardFooter>
             )}
           </Card>
