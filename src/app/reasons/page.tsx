@@ -1,7 +1,9 @@
+
 import ReasonsList from '@/components/reasons/ReasonsList';
 import { INITIAL_REASONS } from '@/lib/constants';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { HeartHandshake } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ReasonsPage() {
   return (
@@ -20,6 +22,17 @@ export default function ReasonsPage() {
           </CardDescription>
         </CardHeader>
         <CardContent className="p-6">
+          <div className="flex justify-center mb-8">
+            <Image
+              src="https://i.pinimg.com/originals/dd/f8/f5/ddf8f563d9b56a862891941a363211b6.gif"
+              alt="Gatinhos de anime fofos"
+              width={200}
+              height={200}
+              unoptimized
+              className="rounded-lg"
+              data-ai-hint="cute anime cat"
+            />
+          </div>
           <ReasonsList reasons={INITIAL_REASONS} />
         </CardContent>
       </Card>
