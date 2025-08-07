@@ -28,9 +28,9 @@ export default function HomePage() {
             <Image 
               src="https://i.pinimg.com/736x/b0/13/9d/b0139daeac2bd47de595efd76965bfb6.jpg" 
               alt="Lontras fofas" 
-              width={64} 
-              height={64} 
-              className="rounded-full"
+              width={245} 
+              height={150} 
+              className="rounded-lg shadow-md"
               unoptimized
               data-ai-hint="cute otters"
             />
