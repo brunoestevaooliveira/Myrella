@@ -1,12 +1,13 @@
 
 import type { Memory, Photo, Reason, LoveQuote } from './types';
 
-export const START_DATING_DATE = new Date(2025, 7, 2); // Month is 0-indexed, so August is 7
+// The 'T00:00:00' part is important to avoid timezone issues and ensure the date is consistent.
+export const START_DATING_DATE = new Date('2025-08-02T00:00:00');
 
 export const INITIAL_MEMORIES: Memory[] = [
   {
     id: '1',
-    date: new Date(2025, 7, 2),
+    date: new Date('2025-08-02T00:00:00'),
     title: 'Nossa Jornada Começou',
     description: 'O lindo dia em que oficialmente começamos a namorar e nossos corações se entrelaçaram.',
     tags: ['aniversário', 'amor'],
@@ -15,7 +16,7 @@ export const INITIAL_MEMORIES: Memory[] = [
   },
   {
     id: '2',
-    date: new Date(2025, 7, 10),
+    date: new Date('2025-08-10T00:00:00'),
     title: 'Primeiro Encontro no Cinema',
     description: 'Assistimos aquela comédia romântica e não parávamos de rir. Lembra do incidente da pipoca?',
     tags: ['encontro', 'diversão'],
@@ -24,7 +25,7 @@ export const INITIAL_MEMORIES: Memory[] = [
   },
   {
     id: '3',
-    date: new Date(2025, 8, 22),
+    date: new Date('2025-09-22T00:00:00'),
     title: 'Felicidade na Praia',
     description: 'Nossa primeira viagem à praia juntos. O pôr do sol era quase tão lindo quanto você.',
     tags: ['viagem', 'natureza'],
@@ -33,7 +34,7 @@ export const INITIAL_MEMORIES: Memory[] = [
   },
    {
     id: '4',
-    date: new Date(2025, 9, 15),
+    date: new Date('2025-10-15T00:00:00'),
     title: 'Passeio de Outono',
     description: 'Um dia tranquilo aproveitando o ar fresco e as cores do outono, sempre juntos.',
     tags: ['passeio', 'natureza'],
@@ -42,7 +43,7 @@ export const INITIAL_MEMORIES: Memory[] = [
   },
   {
     id: '5',
-    date: new Date(2025, 10, 5),
+    date: new Date('2025-11-05T00:00:00'),
     title: 'Abraço Aconchegante',
     description: 'Não há lugar no mundo onde eu me sinta mais seguro e amado do que em seus braços.',
     tags: ['carinho', 'amor'],
@@ -51,7 +52,7 @@ export const INITIAL_MEMORIES: Memory[] = [
   },
   {
     id: '6',
-    date: new Date(2025, 11, 25),
+    date: new Date('2025-12-25T00:00:00'),
     title: 'Nosso Primeiro Natal',
     description: 'Celebrando o Natal juntos, criando nossas próprias tradições e memórias.',
     tags: ['celebração', 'feriado'],
@@ -60,7 +61,7 @@ export const INITIAL_MEMORIES: Memory[] = [
   },
   {
     id: '7',
-    date: new Date(2026, 0, 1),
+    date: new Date('2026-01-01T00:00:00'),
     title: 'Votos de Ano Novo',
     description: 'Brindando a um novo ano de amor, aventuras e felicidade um ao lado do outro.',
     tags: ['celebração', 'futuro'],
@@ -75,7 +76,7 @@ export const INITIAL_PHOTOS: Photo[] = [
     src: 'https://placehold.co/521x927.png',
     alt: 'Um lindo abraço carinhoso',
     caption: 'Em seus braços, encontro meu porto seguro e todo o amor do mundo. ❤️',
-    date: new Date(2025, 10, 5),
+    date: new Date('2025-11-05T00:00:00'),
     dataAiHint: 'casal abraço'
   },
   {
@@ -83,7 +84,7 @@ export const INITIAL_PHOTOS: Photo[] = [
     src: 'https://placehold.co/1647x927.png',
     alt: 'Celebrando um momento especial',
     caption: 'Cada momento com você se torna uma celebração da nossa felicidade.',
-    date: new Date(2025, 11, 25),
+    date: new Date('2025-12-25T00:00:00'),
     dataAiHint: 'casal celebração'
   },
   {
@@ -91,7 +92,7 @@ export const INITIAL_PHOTOS: Photo[] = [
     src: 'https://placehold.co/1647x927.png',
     alt: 'Olhando para o futuro juntos',
     caption: 'Juntos, de mãos dadas, prontos para todos os lindos capítulos que ainda vamos escrever.',
-    date: new Date(2026, 0, 1),
+    date: new Date('2026-01-01T00:00:00'),
     dataAiHint: 'casal futuro'
   },
   {
@@ -99,7 +100,7 @@ export const INITIAL_PHOTOS: Photo[] = [
     src: 'https://placehold.co/522x927.png',
     alt: 'Passeio tranquilo e romântico',
     caption: 'A simplicidade de um passeio se torna extraordinária quando estou com você.',
-    date: new Date(2025, 9, 15),
+    date: new Date('2025-10-15T00:00:00'),
     dataAiHint: 'casal passeio'
   },
   {
@@ -107,7 +108,7 @@ export const INITIAL_PHOTOS: Photo[] = [
     src: 'https://placehold.co/522x927.png',
     alt: 'Explorando uma nova cidade',
     caption: 'Nossa aventura de fim de semana.',
-    date: new Date(2025, 10, 18),
+    date: new Date('2025-11-18T00:00:00'),
     dataAiHint: 'casal viagem'
   },
 ];
