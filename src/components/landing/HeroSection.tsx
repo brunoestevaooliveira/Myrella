@@ -22,8 +22,8 @@ export default function HeroSection() {
         <p className="text-sm text-muted-foreground/80 mb-8">
           愛が芽生えた日 (Ai ga mebaeta hi - O dia em que o amor brotou)
         </p>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Bem-vinda, Myrella, a um lugar especial dedicado à nossa linda jornada juntos. Aqui, celebramos cada momento, cada lembrança e todo o amor que nos une.
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto italic">
+        "Não se deve traduzir 'eu te amo' de forma tão direta e crua. Um japonês jamais diria algo assim. Em vez disso, ao caminhar sob a noite com a pessoa amada, bastaria dizer: 'A lua está bonita, não é?' (月が綺麗ですね, Tsuki ga kirei desu ne). Se a outra pessoa entender o que está implícito na beleza daquele momento compartilhado, isso é o suficiente. O sentimento está ali, no ar, na luz da lua, no silêncio entre os dois. A confissão direta poderia apenas vulgarizar o que é profundo e sagrado."
         </p>
       </div>
     </section>
