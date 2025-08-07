@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Gift, Sparkles, Heart, MessageCircle, Quote as QuoteIcon, CheckCircle2 } from 'lucide-react';
 import { INITIAL_QUOTES, INITIAL_REASONS, INITIAL_AFFECTION_MESSAGES } from '@/lib/constants';
 import type { LoveQuote, Reason } from '@/lib/types';
+import Image from 'next/image';
 
 type Surprise = 
   | { type: 'quote'; content: LoveQuote }
@@ -111,8 +112,19 @@ export default function AffectionPage() {
 
           {surprise && (
             <Card className="bg-accent/20 border-accent shadow-inner rounded-lg animate-in fade-in-50 duration-500">
-              <CardContent className="p-6 min-h-[150px] flex items-center justify-center">
-                {renderSurpriseContent()}
+              <CardContent className="p-6 min-h-[150px] flex flex-col items-center justify-center">
+                <div className='mb-4'>
+                  {renderSurpriseContent()}
+                </div>
+                <Image
+                    src="https://i.pinimg.com/originals/73/0d/75/730d75ed729397068c7a89fa7476e305.gif"
+                    alt="Gatinhos se abraçando"
+                    width={150}
+                    height={150}
+                    unoptimized
+                    className="rounded-lg"
+                    data-ai-hint="cute cats"
+                />
               </CardContent>
             </Card>
           )}
