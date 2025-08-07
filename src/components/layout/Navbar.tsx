@@ -52,7 +52,7 @@ export default function Navbar() {
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary font-lora">
           <Image 
-            src="https://i.pinimg.com/736x/8c/6e/16/8c6e169a42578a693cfadcf389bbefbb.jpg" 
+            src="https://i.pinimg.com/1200x/b3/52/79/b35279bdf57d879ff67da1e8f22b903e.jpg" 
             alt="Gato fofo" 
             width={32} 
             height={32} 
