@@ -23,6 +23,18 @@ export default function HomePage() {
           data-ai-hint="howl sophie"
         />
          <p className="text-sm text-muted-foreground mt-4 italic">Eu te amo muito, meu amor!</p>
+         <div className="mt-4 flex items-center justify-center gap-2">
+            <Image 
+              src="https://i.pinimg.com/736x/b0/13/9d/b0139daeac2bd47de595efd76965bfb6.jpg" 
+              alt="Lontras fofas" 
+              width={24} 
+              height={24} 
+              className="rounded-full"
+              unoptimized
+              data-ai-hint="cute otters"
+            />
+            <p className="text-xs italic text-muted-foreground">é voce meu amor apenas voce minha lontra</p>
+          </div>
       </div>
 
       <section className="text-center">

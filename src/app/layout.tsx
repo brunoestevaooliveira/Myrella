@@ -68,18 +68,6 @@ export default function RootLayout({
                 ></iframe>
               </div>
               <p className="text-xs">&copy; {new Date().getFullYear()} Myrella. Criado com amor <span className="text-primary/70">愛 (Ai)</span>.</p>
-              <div className="mt-2 flex items-center justify-center gap-2">
-                <Image 
-                  src="https://i.pinimg.com/736x/b0/13/9d/b0139daeac2bd47de595efd76965bfb6.jpg" 
-                  alt="Lontras fofas" 
-                  width={24} 
-                  height={24} 
-                  className="rounded-full"
-                  unoptimized
-                  data-ai-hint="cute otters"
-                />
-                <p className="text-xs italic">é voce meu amor apenas voce minha lontra</p>
-              </div>
             </div>
           </footer>
           <Toaster />
