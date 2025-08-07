@@ -21,6 +21,7 @@ export default function PhotoCard({ photo }: PhotoCardProps) {
           className="object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out"
           data-ai-hint={photo.dataAiHint || "couple image"}
           priority={photo.id === '1'} // Prioritize first image for LCP
+          unoptimized
         />
       </CardContent>
       <div className="p-4 flex flex-col flex-grow">

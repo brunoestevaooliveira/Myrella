@@ -67,7 +67,7 @@ export default function HomePage() {
           <FeatureCard
             icon={<Gift className="w-10 h-10 text-primary" />}
             title="Caixinha de Afeto"
-            description="Abra uma surpresa especial pensada para você."
+            description="Abra para uma surpresa especial pensada para você."
             link="/affection"
             linkText="Abrir Surpresa"
           />

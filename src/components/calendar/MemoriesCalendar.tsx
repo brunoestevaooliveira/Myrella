@@ -93,7 +93,8 @@ export default function MemoriesCalendar({ memories }: MemoriesCalendarProps) {
                       fill
                       sizes="(max-width: 768px) 100vw, 33vw"
                       className="object-cover" 
-                      data-ai-hint={selectedMemory.dataAiHint || "couple memory"} 
+                      data-ai-hint={selectedMemory.dataAiHint || "couple memory"}
+                      unoptimized 
                     />
                  </div>
                </CardFooter>

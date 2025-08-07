@@ -5,11 +5,11 @@ export const START_DATING_DATE = new Date(2025, 6, 2); // Month is 0-indexed, so
 export const INITIAL_MEMORIES: Memory[] = [
   {
     id: '1',
-    date: new Date(2025, 6, 2),
+    date: new Date(2025, 4, 17), // Corrigido para 17/05/2025
     title: 'Nossa Jornada Começou',
     description: 'O lindo dia em que oficialmente começamos a namorar e nossos corações se entrelaçaram.',
     tags: ['aniversário', 'amor'],
-    image: 'https://i.pinimg.com/564x/4e/31/23/4e3123b5f377218204b68e7344c2146c.jpg',
+    image: 'https://placehold.co/600x400.png',
     dataAiHint: 'casal feliz',
   },
   {
@@ -18,7 +18,7 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Primeiro Encontro no Cinema',
     description: 'Assistimos aquela comédia romântica e não parávamos de rir. Lembra do incidente da pipoca?',
     tags: ['encontro', 'diversão'],
-    image: 'https://i.pinimg.com/564x/3e/27/29/3e27291a27e7d66645601837b2f56708.jpg',
+    image: 'https://placehold.co/600x400.png',
     dataAiHint: 'cinema casal',
   },
   {
@@ -27,7 +27,7 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Felicidade na Praia',
     description: 'Nossa primeira viagem à praia juntos. O pôr do sol era quase tão lindo quanto você.',
     tags: ['viagem', 'natureza'],
-    image: 'https://i.pinimg.com/564x/8e/d4/2e/8ed42e6a98f12c8b8770b04a889b9195.jpg',
+    image: 'https://placehold.co/600x400.png',
     dataAiHint: 'praia por do sol',
   },
    {
@@ -36,7 +36,7 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Passeio de Outono',
     description: 'Um dia tranquilo aproveitando o ar fresco e as cores do outono, sempre juntos.',
     tags: ['passeio', 'natureza'],
-    image: 'https://i.pinimg.com/564x/ef/7306/ef73065b708b73a339902641712a4c84.jpg',
+    image: 'https://placehold.co/600x400.png',
     dataAiHint: 'casal outono',
   },
   {
@@ -45,7 +45,7 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Abraço Aconchegante',
     description: 'Não há lugar no mundo onde eu me sinta mais seguro e amado do que em seus braços.',
     tags: ['carinho', 'amor'],
-    image: 'https://i.pinimg.com/564x/4e/31/23/4e3123b5f377218204b68e7344c2146c.jpg',
+    image: 'https://placehold.co/600x400.png',
     dataAiHint: 'casal abraço',
   },
   {
@@ -54,7 +54,7 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Nosso Primeiro Natal',
     description: 'Celebrando o Natal juntos, criando nossas próprias tradições e memórias.',
     tags: ['celebração', 'feriado'],
-    image: 'https://i.pinimg.com/564x/3e/27/29/3e27291a27e7d66645601837b2f56708.jpg',
+    image: 'https://placehold.co/600x400.png',
     dataAiHint: 'casal natal',
   },
   {
@@ -63,7 +63,7 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Votos de Ano Novo',
     description: 'Brindando a um novo ano de amor, aventuras e felicidade um ao lado do outro.',
     tags: ['celebração', 'futuro'],
-    image: 'https://i.pinimg.com/564x/8e/d4/2e/8ed42e6a98f12c8b8770b04a889b9195.jpg',
+    image: 'https://placehold.co/600x400.png',
     dataAiHint: 'casal ano novo',
   },
 ];
@@ -71,7 +71,7 @@ export const INITIAL_MEMORIES: Memory[] = [
 export const INITIAL_PHOTOS: Photo[] = [
   {
     id: '1',
-    src: 'https://i.pinimg.com/564x/4e/31/23/4e3123b5f377218204b68e7344c2146c.jpg',
+    src: 'https://placehold.co/521x927.png',
     alt: 'Um lindo abraço carinhoso',
     caption: 'Em seus braços, encontro meu porto seguro e todo o amor do mundo. ❤️',
     date: new Date(2025, 10, 5),
@@ -79,7 +79,7 @@ export const INITIAL_PHOTOS: Photo[] = [
   },
   {
     id: '2',
-    src: 'https://i.pinimg.com/564x/3e/27/29/3e27291a27e7d66645601837b2f56708.jpg',
+    src: 'https://placehold.co/1647x927.png',
     alt: 'Celebrando um momento especial',
     caption: 'Cada momento com você se torna uma celebração da nossa felicidade.',
     date: new Date(2025, 11, 25),
@@ -87,7 +87,7 @@ export const INITIAL_PHOTOS: Photo[] = [
   },
   {
     id: '3',
-    src: 'https://i.pinimg.com/564x/8e/d4/2e/8ed42e6a98f12c8b8770b04a889b9195.jpg',
+    src: 'https://placehold.co/1647x927.png',
     alt: 'Olhando para o futuro juntos',
     caption: 'Juntos, de mãos dadas, prontos para todos os lindos capítulos que ainda vamos escrever.',
     date: new Date(2026, 0, 1),
@@ -95,7 +95,7 @@ export const INITIAL_PHOTOS: Photo[] = [
   },
   {
     id: '4',
-    src: 'https://i.pinimg.com/564x/ef/7306/ef73065b708b73a339902641712a4c84.jpg',
+    src: 'https://placehold.co/522x927.png',
     alt: 'Passeio tranquilo e romântico',
     caption: 'A simplicidade de um passeio se torna extraordinária quando estou com você.',
     date: new Date(2025, 9, 15),
@@ -103,7 +103,7 @@ export const INITIAL_PHOTOS: Photo[] = [
   },
   {
     id: '5',
-    src: 'https://placehold.co/600x400.png',
+    src: 'https://placehold.co/522x927.png',
     alt: 'Explorando uma nova cidade',
     caption: 'Nossa aventura de fim de semana.',
     date: new Date(2025, 10, 18),
