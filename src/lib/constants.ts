@@ -9,7 +9,7 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Nossa Jornada Começou',
     description: 'O lindo dia em que oficialmente começamos a namorar e nossos corações se entrelaçaram.',
     tags: ['aniversário', 'amor'],
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://i.pinimg.com/564x/4e/31/23/4e3123b5f377218204b68e7344c2146c.jpg',
     dataAiHint: 'casal feliz',
   },
   {
@@ -18,7 +18,7 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Primeiro Encontro no Cinema',
     description: 'Assistimos aquela comédia romântica e não parávamos de rir. Lembra do incidente da pipoca?',
     tags: ['encontro', 'diversão'],
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://i.pinimg.com/564x/3e/27/29/3e27291a27e7d66645601837b2f56708.jpg',
     dataAiHint: 'cinema casal',
   },
   {
@@ -27,38 +27,82 @@ export const INITIAL_MEMORIES: Memory[] = [
     title: 'Felicidade na Praia',
     description: 'Nossa primeira viagem à praia juntos. O pôr do sol era quase tão lindo quanto você.',
     tags: ['viagem', 'natureza'],
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://i.pinimg.com/564x/8e/d4/2e/8ed42e6a98f12c8b8770b04a889b9195.jpg',
     dataAiHint: 'praia por do sol',
+  },
+   {
+    id: '4',
+    date: new Date(2025, 9, 15),
+    title: 'Passeio de Outono',
+    description: 'Um dia tranquilo aproveitando o ar fresco e as cores do outono, sempre juntos.',
+    tags: ['passeio', 'natureza'],
+    image: 'https://i.pinimg.com/564x/ef/7306/ef73065b708b73a339902641712a4c84.jpg',
+    dataAiHint: 'casal outono',
+  },
+  {
+    id: '5',
+    date: new Date(2025, 10, 5),
+    title: 'Abraço Aconchegante',
+    description: 'Não há lugar no mundo onde eu me sinta mais seguro e amado do que em seus braços.',
+    tags: ['carinho', 'amor'],
+    image: 'https://i.pinimg.com/564x/4e/31/23/4e3123b5f377218204b68e7344c2146c.jpg',
+    dataAiHint: 'casal abraço',
+  },
+  {
+    id: '6',
+    date: new Date(2025, 11, 25),
+    title: 'Nosso Primeiro Natal',
+    description: 'Celebrando o Natal juntos, criando nossas próprias tradições e memórias.',
+    tags: ['celebração', 'feriado'],
+    image: 'https://i.pinimg.com/564x/3e/27/29/3e27291a27e7d66645601837b2f56708.jpg',
+    dataAiHint: 'casal natal',
+  },
+  {
+    id: '7',
+    date: new Date(2026, 0, 1),
+    title: 'Votos de Ano Novo',
+    description: 'Brindando a um novo ano de amor, aventuras e felicidade um ao lado do outro.',
+    tags: ['celebração', 'futuro'],
+    image: 'https://i.pinimg.com/564x/8e/d4/2e/8ed42e6a98f12c8b8770b04a889b9195.jpg',
+    dataAiHint: 'casal ano novo',
   },
 ];
 
 export const INITIAL_PHOTOS: Photo[] = [
   {
     id: '1',
-    src: 'https://placehold.co/600x400.png',
-    alt: 'Uma linda lembrança juntos',
-    caption: 'Aquela vez que fomos caminhar e nos perdemos (mas encontramos uma vista maravilhosa!).',
-    date: new Date(2025, 7, 5),
-    dataAiHint: 'casal caminhada'
+    src: 'https://i.pinimg.com/564x/4e/31/23/4e3123b5f377218204b68e7344c2146c.jpg',
+    alt: 'Um lindo abraço carinhoso',
+    caption: 'Em seus braços, encontro meu porto seguro e todo o amor do mundo. ❤️',
+    date: new Date(2025, 10, 5),
+    dataAiHint: 'casal abraço'
   },
   {
     id: '2',
-    src: 'https://placehold.co/600x400.png',
-    alt: 'Celebrando uma ocasião especial',
-    caption: 'Seu jantar de aniversário - você estava deslumbrante!',
-    date: new Date(2025, 8, 12),
+    src: 'https://i.pinimg.com/564x/3e/27/29/3e27291a27e7d66645601837b2f56708.jpg',
+    alt: 'Celebrando um momento especial',
+    caption: 'Cada momento com você se torna uma celebração da nossa felicidade.',
+    date: new Date(2025, 11, 25),
     dataAiHint: 'casal celebração'
   },
   {
     id: '3',
-    src: 'https://placehold.co/600x400.png',
-    alt: 'Uma noite aconchegante em casa',
-    caption: 'Noite de cinema com pizza caseira. Melhor combinação!',
-    date: new Date(2025, 9, 3),
-    dataAiHint: 'casal aconchego'
+    src: 'https://i.pinimg.com/564x/8e/d4/2e/8ed42e6a98f12c8b8770b04a889b9195.jpg',
+    alt: 'Olhando para o futuro juntos',
+    caption: 'Juntos, de mãos dadas, prontos para todos os lindos capítulos que ainda vamos escrever.',
+    date: new Date(2026, 0, 1),
+    dataAiHint: 'casal futuro'
   },
   {
     id: '4',
+    src: 'https://i.pinimg.com/564x/ef/7306/ef73065b708b73a339902641712a4c84.jpg',
+    alt: 'Passeio tranquilo e romântico',
+    caption: 'A simplicidade de um passeio se torna extraordinária quando estou com você.',
+    date: new Date(2025, 9, 15),
+    dataAiHint: 'casal passeio'
+  },
+  {
+    id: '5',
     src: 'https://placehold.co/600x400.png',
     alt: 'Explorando uma nova cidade',
     caption: 'Nossa aventura de fim de semana.',

@@ -5,6 +5,7 @@ export interface Memory {
   description: string;
   tags?: string[];
   image?: string; // Optional image URL
+  dataAiHint?: string;
 }
 
 export interface Photo {
