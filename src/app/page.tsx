@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, CalendarHeart, Gift, Images, Sparkles, Quote, Heart } from 'lucide-react';
+import { ArrowRight, CalendarHeart, Gift, Sparkles, Quote, Heart, FileHeart } from 'lucide-react';
 
 const loveLanguages = [
   'Afrikaans: Ek het jou lief',
@@ -179,18 +179,18 @@ export default function HomePage() {
             linkText="Ver Declaração"
           />
           <FeatureCard
+            icon={<FileHeart className="w-10 h-10 text-primary" />}
+            title="Uma Promessa"
+            description="Uma mensagem especial para você."
+            link="/promise"
+            linkText="Ler Mensagem"
+          />
+          <FeatureCard
             icon={<CalendarHeart className="w-10 h-10 text-primary" />}
             title="Nossas Datas Especiais"
             description="Reviva nossos momentos queridos em um calendário interativo."
             link="/calendar"
             linkText="Ver Calendário"
-          />
-          <FeatureCard
-            icon={<Images className="w-10 h-10 text-primary" />}
-            title="Memórias em Fotos"
-            description="Uma galeria de nossas aventuras e sorrisos juntos."
-            link="/gallery"
-            linkText="Ver Fotos"
           />
           <FeatureCard
             icon={<Sparkles className="w-10 h-10 text-primary" />}
