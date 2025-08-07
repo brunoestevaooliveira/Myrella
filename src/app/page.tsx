@@ -17,8 +17,8 @@ export default function HomePage() {
         <Image 
           src="https://i.pinimg.com/originals/7c/84/bd/7c84bd28ec86fd2049dc159e9e2cc23a.gif" 
           alt="Howl e Sophie se olhando" 
-          width={245} 
-          height={150} 
+          width={490} 
+          height={300} 
           className="mx-auto rounded-lg shadow-md" 
           unoptimized={true} // GIFs can be unoptimized
           data-ai-hint="howl sophie"
