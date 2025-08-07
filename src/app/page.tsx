@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, CalendarHeart, Gift, ImagePlay, Sparkles, Quote, MessageSquareHeart } from 'lucide-react';
+import { ArrowRight, CalendarHeart, Gift, Images, Sparkles, Quote, MessageSquareHeart } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -14,7 +14,7 @@ export default function HomePage() {
 
       <div className="my-10 text-center opacity-80 hover:opacity-100 transition-opacity duration-300">
         <Image 
-          src="https://i.pinimg.com/originals/11/2c/83/112c83c6c1fc6044c3fe809c004c86b2.gif" 
+          src="https://i.pinimg.com/originals/7c/84/bd/7c84bd28ec86fd2049dc159e9e2cc23a.gif" 
           alt="Howl e Sophie se olhando" 
           width={245} 
           height={150} 
@@ -37,7 +37,7 @@ export default function HomePage() {
             linkText="Ver Calendário"
           />
           <FeatureCard
-            icon={<ImagePlay className="w-10 h-10 text-primary" />}
+            icon={<Images className="w-10 h-10 text-primary" />}
             title="Memórias em Fotos"
             description="Uma galeria de nossas aventuras e sorrisos juntos."
             link="/gallery"
