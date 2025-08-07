@@ -1,15 +1,16 @@
+
 import type { Memory, Photo, Reason, LoveQuote } from './types';
 
-export const START_DATING_DATE = new Date(2025, 6, 2); // Month is 0-indexed, so July is 6
+export const START_DATING_DATE = new Date(2025, 4, 17); // Month is 0-indexed, so May is 4
 
 export const INITIAL_MEMORIES: Memory[] = [
   {
     id: '1',
-    date: new Date(2025, 4, 17), // Corrigido para 17/05/2025
+    date: new Date(2025, 4, 17),
     title: 'Nossa Jornada Começou',
     description: 'O lindo dia em que oficialmente começamos a namorar e nossos corações se entrelaçaram.',
     tags: ['aniversário', 'amor'],
-    image: 'https://placehold.co/600x400.png',
+    image: 'https://i.pinimg.com/736x/81/71/51/8171515f162cc1254da32d59c23ad43f.jpg',
     dataAiHint: 'casal feliz',
   },
   {
