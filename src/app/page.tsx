@@ -129,7 +129,7 @@ export default function HomePage() {
           width={980} 
           height={600} 
           className="mx-auto rounded-lg shadow-md" 
-          unoptimized={true} // GIFs can be unoptimized
+          unoptimized={true}
           data-ai-hint="howl sophie"
         />
          <p className="text-sm text-muted-foreground mt-4 italic">Eu te amo muito, meu amor!</p>
@@ -165,6 +165,21 @@ export default function HomePage() {
               <p key={index}>{lang}</p>
             ))}
         </div>
+      </section>
+
+      <section className="text-center my-12">
+        <Image
+          src="https://i.pinimg.com/736x/12/32/37/123237c6e33b6287e69210fbf4fb8042.jpg"
+          alt="Casal de anime se abraçando"
+          width={800}
+          height={600}
+          className="mx-auto rounded-lg shadow-md mb-6"
+          unoptimized
+          data-ai-hint="anime couple hug"
+        />
+        <p className="text-xl italic text-muted-foreground max-w-2xl mx-auto">
+          Você não faz ideia do sorriso que você coloca no meu rosto só por existir.
+        </p>
       </section>
 
     </div>
