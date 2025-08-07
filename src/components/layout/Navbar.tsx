@@ -3,7 +3,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { Home, CalendarDays, ListChecks, UserCog, Menu, Quote, Gift, Heart, FileHeart } from 'lucide-react';
+import { Home, CalendarDays, ListChecks, UserCog, Menu, Gift, Heart, FileHeart } from 'lucide-react';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
@@ -18,7 +18,6 @@ const navItems = [
   { href: '/promise', label: 'Promessa', icon: FileHeart },
   { href: '/calendar', label: 'Nosso Calendário', icon: CalendarDays },
   { href: '/reasons', label: 'Razões Que Te Amo', icon: ListChecks },
-  { href: '/quotes', label: 'Citações de Amor', icon: Quote },
   { href: '/affection', label: 'Caixinha de Afeto', icon: Gift },
   { href: '/admin', label: 'Gerenciar Conteúdo', icon: UserCog },
 ];
