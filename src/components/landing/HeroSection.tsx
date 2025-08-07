@@ -23,7 +23,7 @@ export default function HeroSection() {
           愛が芽生えた日 (Ai ga mebaeta hi - O dia em que o amor brotou)
         </p>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          Bem-vindo(a) ao Amor Anima, um lugar especial dedicado à nossa linda jornada juntos. Aqui, celebramos cada momento, cada lembrança e todo o amor que nos une.
+          Bem-vinda, Myrella, a um lugar especial dedicado à nossa linda jornada juntos. Aqui, celebramos cada momento, cada lembrança e todo o amor que nos une.
         </p>
       </div>
     </section>

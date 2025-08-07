@@ -1,11 +1,11 @@
 import type { Memory, Photo, Reason, LoveQuote } from './types';
 
-export const START_DATING_DATE = new Date(2025, 4, 17); // Month is 0-indexed, so May is 4
+export const START_DATING_DATE = new Date(2025, 6, 2); // Month is 0-indexed, so July is 6
 
 export const INITIAL_MEMORIES: Memory[] = [
   {
     id: '1',
-    date: new Date(2025, 4, 17),
+    date: new Date(2025, 6, 2),
     title: 'Nossa Jornada Começou',
     description: 'O lindo dia em que oficialmente começamos a namorar e nossos corações se entrelaçaram.',
     tags: ['aniversário', 'amor'],
@@ -14,7 +14,7 @@ export const INITIAL_MEMORIES: Memory[] = [
   },
   {
     id: '2',
-    date: new Date(2025, 5, 10),
+    date: new Date(2025, 7, 10),
     title: 'Primeiro Encontro no Cinema',
     description: 'Assistimos aquela comédia romântica e não parávamos de rir. Lembra do incidente da pipoca?',
     tags: ['encontro', 'diversão'],
@@ -23,7 +23,7 @@ export const INITIAL_MEMORIES: Memory[] = [
   },
   {
     id: '3',
-    date: new Date(2025, 6, 22),
+    date: new Date(2025, 8, 22),
     title: 'Felicidade na Praia',
     description: 'Nossa primeira viagem à praia juntos. O pôr do sol era quase tão lindo quanto você.',
     tags: ['viagem', 'natureza'],

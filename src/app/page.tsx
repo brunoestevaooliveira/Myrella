@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, CalendarHeart, Gift, ImagePlay, Sparkles, Quote, MessageSquareHeart } from 'lucide-react'; // Adicionado MessageSquareHeart
+import { ArrowRight, CalendarHeart, Gift, ImagePlay, Sparkles, Quote, MessageSquareHeart } from 'lucide-react';
 
 export default function HomePage() {
   return (
@@ -14,15 +14,15 @@ export default function HomePage() {
 
       <div className="my-10 text-center opacity-80 hover:opacity-100 transition-opacity duration-300">
         <Image 
-          src="https://i.pinimg.com/originals/20/77/68/20776891228b10ea7a42267e2cbb5a9d.gif" 
-          alt="Snorlax dormindo" 
-          width={120} 
-          height={120} 
-          className="mx-auto rounded-full shadow-md" 
+          src="https://i.pinimg.com/originals/11/2c/83/112c83c6c1fc6044c3fe809c004c86b2.gif" 
+          alt="Howl e Sophie se olhando" 
+          width={245} 
+          height={150} 
+          className="mx-auto rounded-lg shadow-md" 
           unoptimized={true} // GIFs can be unoptimized
-          data-ai-hint="snorlax sleeping cute"
+          data-ai-hint="howl sophie"
         />
-         <p className="text-xs text-muted-foreground mt-2 italic">~ um soninho de amor ~</p>
+         <p className="text-sm text-muted-foreground mt-4 italic">Eu te amo muito, meu amor!</p>
       </div>
 
       <section className="text-center">

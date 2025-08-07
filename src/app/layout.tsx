@@ -26,7 +26,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: 'Marceli',
+  title: 'Myrella',
   description: 'Um lugar especial para a nossa história de amor.',
 };
 
@@ -52,7 +52,7 @@ export default function RootLayout({
             {children}
           </main>
           <footer className="py-6 text-center text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Marceli. Criado com amor <span className="text-xs text-primary/70">愛 (Ai)</span>.</p>
+            <p>&copy; {new Date().getFullYear()} Myrella. Criado com amor <span className="text-xs text-primary/70">愛 (Ai)</span>.</p>
           </footer>
           <Toaster />
         </ThemeProvider>
