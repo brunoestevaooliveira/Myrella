@@ -6,6 +6,7 @@ import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider'; 
+import Image from 'next/image';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -65,7 +66,19 @@ export default function RootLayout({
                 style={{ borderRadius: '12px', maxWidth: '400px', margin: '0 auto' }}
               ></iframe>
             </div>
-            <p className="mt-4">&copy; {new Date().getFullYear()} Myrella. Criado com amor <span className="text-xs text-primary/70">愛 (Ai)</span>.</p>
+            <p>&copy; {new Date().getFullYear()} Myrella. Criado com amor <span className="text-xs text-primary/70">愛 (Ai)</span>.</p>
+            <div className="mt-4 flex flex-col items-center gap-2">
+              <Image 
+                src="https://i.pinimg.com/736x/b0/13/9d/b0139daeac2bd47de595efd76965bfb6.jpg" 
+                alt="Lontras fofas" 
+                width={100} 
+                height={100} 
+                className="rounded-full"
+                unoptimized
+                data-ai-hint="cute otters"
+              />
+              <p className="text-sm italic">é voce meu amor apenas voce minha lontra</p>
+            </div>
           </footer>
           <Toaster />
         </ThemeProvider>
