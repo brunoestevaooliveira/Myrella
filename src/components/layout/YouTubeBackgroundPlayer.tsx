@@ -5,20 +5,18 @@ import React, { useEffect } from 'react';
 
 export default function YouTubeBackgroundPlayer() {
   useEffect(() => {
-    const videoId = 'KmOVNVZEP9o';
-    let player: any; // Instância do YT.Player
+    const videoId = 'p9_ouiTytmI'; // ID do vídeo/playlist do YouTube
+    let player: any; 
 
     const onPlayerReady = (event: any) => {
-      event.target.mute(); // Inicia mudo para tentar contornar restrições de autoplay
+      event.target.mute(); 
       event.target.playVideo();
-      // Você pode tentar desmutar após uma interação do usuário ou um pequeno delay
-      // setTimeout(() => event.target.unMute(), 1000); 
     };
 
     const onPlayerStateChange = (event: any) => {
       // @ts-ignore
       if (event.data === window.YT.PlayerState.ENDED) {
-        player.playVideo(); // Garante o loop
+        player.playVideo(); 
       }
     };
 
@@ -96,10 +94,8 @@ export default function YouTubeBackgroundPlayer() {
       }
       // @ts-ignore
       delete window.onYouTubeIframeAPIReady;
-      // Não removemos o div aqui para evitar problemas de HMR, 
-      // mas em produção ele seria limpo com a página
     };
   }, []);
 
-  return null; // Este componente não renderiza nada visualmente
+  return null; 
 }
