@@ -1,3 +1,4 @@
+
 import HeroSection from '@/components/landing/HeroSection';
 import AnniversaryCountdown from '@/components/landing/AnniversaryCountdown';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -27,13 +28,13 @@ export default function HomePage() {
             <Image 
               src="https://i.pinimg.com/736x/b0/13/9d/b0139daeac2bd47de595efd76965bfb6.jpg" 
               alt="Lontras fofas" 
-              width={24} 
-              height={24} 
+              width={64} 
+              height={64} 
               className="rounded-full"
               unoptimized
               data-ai-hint="cute otters"
             />
-            <p className="text-xs italic text-muted-foreground">é voce meu amor apenas voce minha lontra</p>
+            <p className="text-md italic text-muted-foreground">é voce meu amor apenas voce minha lontra</p>
           </div>
       </div>
 
