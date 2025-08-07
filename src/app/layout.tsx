@@ -6,7 +6,6 @@ import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import { Toaster } from '@/components/ui/toaster';
 import { ThemeProvider } from '@/components/theme-provider'; 
-import YouTubeBackgroundPlayer from '@/components/layout/YouTubeBackgroundPlayer';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -35,6 +34,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const videoId = 'p9_ouiTytmI';
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&loop=1&playlist=${videoId}&controls=1`;
+
   return (
     <html lang="pt-BR" suppressHydrationWarning>
       <body
@@ -46,12 +48,23 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <YouTubeBackgroundPlayer />
           <Navbar />
           <main className="flex-grow container mx-auto px-4 py-8">
             {children}
           </main>
-          <footer className="py-6 text-center text-muted-foreground sticky bottom-0 z-10 bg-background/80 backdrop-blur">
+          <footer className="py-6 px-4 text-center text-muted-foreground sticky bottom-0 z-10 bg-background/90 backdrop-blur">
+            <div className="mb-4">
+              <iframe 
+                width="100%" 
+                height="80" 
+                src={embedUrl}
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowFullScreen
+                style={{ borderRadius: '12px', maxWidth: '400px', margin: '0 auto' }}
+              ></iframe>
+            </div>
             <p className="mt-4">&copy; {new Date().getFullYear()} Myrella. Criado com amor <span className="text-xs text-primary/70">愛 (Ai)</span>.</p>
           </footer>
           <Toaster />
