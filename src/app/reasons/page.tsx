@@ -26,8 +26,8 @@ export default function ReasonsPage() {
             <Image
               src="https://i.pinimg.com/originals/dd/f8/f5/ddf8f563d9b56a862891941a363211b6.gif"
               alt="Gatinhos de anime fofos"
-              width={200}
-              height={200}
+              width={400}
+              height={400}
               unoptimized
               className="rounded-lg"
               data-ai-hint="cute anime cat"
