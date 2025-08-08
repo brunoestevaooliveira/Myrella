@@ -50,25 +50,28 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
-        <Link href="/" className="flex items-center gap-2 text-2xl font-bold text-primary font-lora">
-          <Image 
-            src="https://i.pinimg.com/1200x/b3/52/79/b35279bdf57d879ff67da1e8f22b903e.jpg" 
-            alt="Gato fofo" 
-            width={32} 
-            height={32} 
-            className="rounded-full"
-            unoptimized
-          />
-          Myrella <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span>
-          <Image 
-            src="https://i.pinimg.com/originals/7c/84/bd/7c84bd28ec86fd2049dc159e9e2cc23a.gif"
-            alt="Howl e Sophie"
-            width={192}
-            height={64}
-            className="rounded-md"
-            unoptimized
-          />
-        </Link>
+        <div className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2 text-2xl font-lora font-bold text-primary">
+                <Image 
+                    src="https://i.pinimg.com/1200x/b3/52/79/b35279bdf57d879ff67da1e8f22b903e.jpg" 
+                    alt="Gato fofo" 
+                    width={32} 
+                    height={32} 
+                    className="rounded-full"
+                    unoptimized
+                />
+                Myrella <span className="text-primary/80 font-normal text-[0.7em] relative top-[-0.1em] ml-0.5">愛</span>
+            </Link>
+            <Image 
+                src="https://i.pinimg.com/originals/7c/84/bd/7c84bd28ec86fd2049dc159e9e2cc23a.gif"
+                alt="Howl e Sophie"
+                width={192} 
+                height={64} 
+                className="rounded-md h-10 object-cover"
+                style={{ width: '192px' }}
+                unoptimized
+            />
+        </div>
 
         <div className="flex items-center space-x-2">
           <nav className="hidden md:flex items-center space-x-1">
