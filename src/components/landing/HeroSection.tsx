@@ -9,6 +9,7 @@ export default function HeroSection() {
   return (
     <section className="text-center py-12 md:py-20 bg-gradient-to-br from-primary/20 via-background to-accent/20 rounded-xl shadow-lg">
       <div className="container mx-auto px-4">
+        <p className="text-3xl font-lora text-primary/90 mb-2">Myrella</p>
         <Heart className="w-16 h-16 text-primary mx-auto mb-6 animate-pulse" />
         <h1 className="text-4xl md:text-5xl font-lora font-bold mb-2 text-primary">
           Nossa História de Amor Começou
