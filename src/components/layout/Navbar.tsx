@@ -63,7 +63,7 @@ export default function Navbar() {
           <Image 
             src="https://i.pinimg.com/originals/7c/84/bd/7c84bd28ec86fd2049dc159e9e2cc23a.gif" 
             alt="Howl e Sophie"
-            width={96}
+            width={192}
             height={64}
             className="rounded-md"
             unoptimized
