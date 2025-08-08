@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 export default function AmorPage() {
@@ -13,9 +14,9 @@ export default function AmorPage() {
           className="opacity-90"
           data-ai-hint="blue sky clouds"
         />
-        <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
-          <h1 className="text-6xl md:text-8xl font-lora text-white/90 drop-shadow-lg animate-pulse">
-            Amor
+        <div className="absolute inset-0 bg-black/20 flex items-center justify-center text-center p-4">
+          <h1 className="text-4xl md:text-6xl font-lora text-white/95 drop-shadow-lg leading-tight">
+            Você não faz ideia do sorriso que você coloca no meu rosto só por existir.
           </h1>
         </div>
       </div>
