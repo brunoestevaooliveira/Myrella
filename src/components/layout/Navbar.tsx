@@ -19,7 +19,6 @@ const navItems = [
   { href: '/calendar', label: 'Nosso Calendário', icon: CalendarDays },
   { href: '/reasons', label: 'Razões Que Te Amo', icon: ListChecks },
   { href: '/affection', label: 'Caixinha de Afeto', icon: Gift },
-  { href: '/admin', label: 'Gerenciar Conteúdo', icon: UserCog },
 ];
 
 export default function Navbar() {
